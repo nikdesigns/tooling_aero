@@ -107,398 +107,193 @@
       </div>
     </nav>
 
-    <!-- hero -->
-    <main>
-      <div>
-        <!-- Hero card -->
-        <div class="relative mt-24">
-          <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-              <div class="absolute inset-0">
-                <img
-                  class="h-full w-full object-cover"
-                  src="./images/plane_hanger_3.jpg"
-                  alt="People working on laptops"
-                />
-                <div
-                  class="absolute inset-0 bg-blue-50 mix-blend-multiply"
-                ></div>
-              </div>
+    <!-- tooling section -->
+    <main
+      class="max-w-7xl mx-auto sm:px-6 sm:py-6 lg:px-8 mt-32 mb-24 bg-gray-100 rounded-lg"
+    >
+      <!-- filter section -->
+      <div
+        class="grid grid-cols-1 gap-y-6 gap-x-4 auto-cols-max sm:grid-cols-6"
+      >
+        <div class="sm:col-span-6">
+          <label
+            for="part-number"
+            class="block text-sm font-medium text-gray-700"
+          >
+            Upload a List of Part
+          </label>
+          <button
+            type="button"
+            class="mt-2 inline-flex items-center px-6 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Upload
+          </button>
+        </div>
 
-              <div
-                class="relative px-4 py-16 sm:px-6 sm:py-12 lg:py-16 lg:px-8"
-              >
-                <div
-                  class="bg-blue-900 bg-opacity-75 px-16 py-6 w-max mx-auto rounded-xl"
+        <div class="sm:col-span-6">
+          <hr />
+        </div>
+
+        <div class="sm:col-span-2">
+          <label
+            for="part-number"
+            class="block text-sm font-medium text-gray-700"
+          >
+            Part Number
+          </label>
+          <div class="mt-1">
+            <input
+              type="text"
+              name="part-number"
+              id="part-number"
+              autocomplete="part-number"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label
+            for="part-description"
+            class="block text-sm font-medium text-gray-700"
+          >
+            Description
+          </label>
+          <div class="mt-1">
+            <input
+              id="part-description"
+              name="part-description"
+              type="text"
+              autocomplete="part-description"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-1">
+          <label for="quantity" class="block text-sm font-medium text-gray-700">
+            Quantity
+          </label>
+          <div class="mt-1">
+            <input
+              type="number"
+              name="quantity"
+              id="quantity"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <div>
+            <label class="text-sm font-medium text-gray-700">Condition</label>
+            <div class="flex mt-2">
+              <div class="flex items-center mr-6">
+                <input
+                  checked
+                  id="condition-new"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  for="condition-new"
+                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >New</label
                 >
-                  <h1
-                    class="text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl"
+              </div>
+              <div class="flex items-center mr-6">
+                <input
+                  checked
+                  id="condition-used"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  for="condition-used"
+                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >Used</label
+                >
+              </div>
+              <div class="flex items-center mr-6">
+                <input
+                  checked
+                  id="condition-others"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  for="condition-others"
+                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >Other</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">For</label>
+            <fieldset class="mt-2">
+              <legend class="sr-only">For</legend>
+              <div
+                class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10"
+              >
+                <div class="flex items-center">
+                  <input
+                    id="tool-rent"
+                    name="tool-for"
+                    type="radio"
+                    checked
+                    class="focus:ring-indigo-500 h-4 w-4 text-blue-600 border-gray-300"
+                  />
+                  <label
+                    for="tool-rent"
+                    class="ml-3 block text-sm font-medium text-gray-700"
                   >
-                    <span class="block text-white drop-shadow-lg"
-                      >YOU NAME IT!</span
-                    >
-                    <span class="block text-white drop-shadow-lg"
-                      >WE SELL IT!</span
-                    >
-                  </h1>
-                  <p
-                    class="mt-6 max-w-lg mx-auto text-center text-lg text-white sm:max-w-3xl drop-shadow-lg"
+                    Rent
+                  </label>
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    id="tool-lease"
+                    name="tool-for"
+                    type="radio"
+                    class="focus:ring-indigo-500 h-4 w-4 text-blue-600 border-gray-300"
+                  />
+                  <label
+                    for="tool-lease"
+                    class="ml-3 block text-sm font-medium text-gray-700"
                   >
-                    Tooling.Aero is your one-stop shop for anything and
-                  </p>
-                  <p
-                    class="max-w-lg mx-auto text-center text-lg text-white sm:max-w-3xl drop-shadow-lg"
-                  >
-                    everything tooling related.
-                  </p>
-                  <div
-                    class="mt-6 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"
-                  >
-                    <div
-                      class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-1 sm:gap-5"
-                    >
-                      <a
-                        href="#"
-                        class="flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-900 bg-yellow-500 hover:bg-yellow-400 sm:px-8"
-                      >
-                        Learn More!
-                      </a>
-                      <!-- <a
-                        href="#"
-                        class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-90 hover:bg-opacity-100 sm:px-8"
-                      >
-                        Live demo
-                      </a> -->
-                    </div>
-                  </div>
+                    Lease
+                  </label>
                 </div>
               </div>
-            </div>
+            </fieldset>
           </div>
         </div>
 
-        <!-- Logo cloud -->
-        <div class="bg-gray-100">
-          <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <p
-              class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide"
-            >
-              Trusted by several companies all over the world
-            </p>
-            <div
-              class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5"
-            >
-              <div
-                class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
-              >
-                <img
-                  class="h-12 filter grayscale hover:grayscale-0"
-                  src="https://www.teardowns.aero/images/advertise/air_logo.png"
-                  alt="Tuple"
-                />
-              </div>
-              <div
-                class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
-              >
-                <img
-                  class="h-12 filter grayscale hover:grayscale-0"
-                  src="https://www.teardowns.aero/images/advertise/repaero.png"
-                  alt="Mirage"
-                />
-              </div>
-              <div
-                class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
-              >
-                <img
-                  class="h-12"
-                  src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                  alt="StaticKit"
-                />
-              </div>
-              <div
-                class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1"
-              >
-                <img
-                  class="h-12"
-                  src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                  alt="Transistor"
-                />
-              </div>
-              <div
-                class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1"
-              >
-                <img
-                  class="h-12"
-                  src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                  alt="Workcation"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- featured -->
-      <div class="py-16 bg-white py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="lg:text-center">
-            <h2
-              class="text-base text-blue-800 font-semibold tracking-wide uppercase"
-            >
-              OUR SERVICE's
-            </h2>
-            <!-- <p
-              class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-            >
-              A better way to send money
-            </p> -->
-            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </div>
-
-          <div class="mt-10">
-            <dl
-              class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
-            >
-              <div class="relative">
-                <dt>
-                  <div
-                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <!-- Heroicon name: outline/globe-alt -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    OEM's
-                  </p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
-                </dd>
-              </div>
-
-              <div class="relative">
-                <dt>
-                  <div
-                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    Buy or Lease
-                  </p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
-                </dd>
-              </div>
-
-              <div class="relative">
-                <dt>
-                  <div
-                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <!-- Heroicon name: outline/lightning-bolt -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z"
-                        clip-rule="evenodd"
-                      />
-                      <path
-                        d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    Sell Your Tooling
-                  </p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
-                </dd>
-              </div>
-
-              <div class="relative">
-                <dt>
-                  <div
-                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <!-- Heroicon name: outline/annotation -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M17.303 5.197A7.5 7.5 0 006.697 15.803a.75.75 0 01-1.061 1.061A9 9 0 1121 10.5a.75.75 0 01-1.5 0c0-1.92-.732-3.839-2.197-5.303zm-2.121 2.121a4.5 4.5 0 00-6.364 6.364.75.75 0 11-1.06 1.06A6 6 0 1118 10.5a.75.75 0 01-1.5 0c0-1.153-.44-2.303-1.318-3.182zm-3.634 1.314a.75.75 0 01.82.311l5.228 7.917a.75.75 0 01-.777 1.148l-2.097-.43 1.045 3.9a.75.75 0 01-1.45.388l-1.044-3.899-1.601 1.42a.75.75 0 01-1.247-.606l.569-9.47a.75.75 0 01.554-.68z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    Connect
-                  </p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      <!-- cta section -->
-      <div class="bg-gray-100">
-        <div
-          class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-18 lg:px-8 lg:flex lg:items-center lg:justify-between"
-        >
-          <h2
-            class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl"
+        <div class="sm:col-span-2 self-end place-self-end">
+          <button
+            type="button"
+            class="inline-flex items-center px-12 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            <span class="block">Ready to dive in?</span>
-            <span class="block text-blue-700"
-              >Start your free trial today.</span
-            >
-          </h2>
-          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-            <div class="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                class="inline-flex items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-blue-900 bg-yellow-400 hover:bg-yellow-300"
-              >
-                Get started
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- faq section -->
-      <div class="bg-white py-12">
-        <div
-          class="max-w-7xl mx-auto py-16 px-4 divide-y-2 divide-gray-200 sm:py-24 sm:px-6 lg:px-8"
-        >
-          <h2 class="text-3xl font-extrabold text-gray-900 text-center">
-            Frequently asked questions
-          </h2>
-          <div class="mt-6 pt-10">
-            <dl
-              class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12"
-            >
-              <div>
-                <dt class="text-lg leading-6 font-medium text-gray-900">
-                  What&#039;s the best thing about Switzerland?
-                </dt>
-                <dd class="mt-2 text-base text-gray-500">
-                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
-                  laboriosam fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt class="text-lg leading-6 font-medium text-gray-900">
-                  What&#039;s the best thing about Switzerland?
-                </dt>
-                <dd class="mt-2 text-base text-gray-500">
-                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
-                  laboriosam fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt class="text-lg leading-6 font-medium text-gray-900">
-                  What&#039;s the best thing about Switzerland?
-                </dt>
-                <dd class="mt-2 text-base text-gray-500">
-                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
-                  laboriosam fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt class="text-lg leading-6 font-medium text-gray-900">
-                  What&#039;s the best thing about Switzerland?
-                </dt>
-                <dd class="mt-2 text-base text-gray-500">
-                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
-                  laboriosam fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt class="text-lg leading-6 font-medium text-gray-900">
-                  What&#039;s the best thing about Switzerland?
-                </dt>
-                <dd class="mt-2 text-base text-gray-500">
-                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
-                  laboriosam fugiat.
-                </dd>
-              </div>
-              <div>
-                <dt class="text-lg leading-6 font-medium text-gray-900">
-                  What&#039;s the best thing about Switzerland?
-                </dt>
-                <dd class="mt-2 text-base text-gray-500">
-                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
-                  laboriosam fugiat.
-                </dd>
-              </div>
-
-              <!-- More questions... -->
-            </dl>
-          </div>
+            Search
+          </button>
+          <button
+            type="button"
+            class="inline-flex items-center px-6 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Clear
+          </button>
         </div>
       </div>
     </main>
+
     <!-- footer -->
     <footer class="bg-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
