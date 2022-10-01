@@ -109,11 +109,11 @@
 
     <!-- tooling section -->
     <main
-      class="max-w-7xl mx-auto sm:px-6 sm:py-6 lg:px-8 mt-32 mb-24 bg-gray-100 rounded-lg"
+      class="max-w-7xl mx-auto sm:px-6 sm:py-6 lg:px-8 mt-28 bg-gray-100 rounded-lg mb-6"
     >
       <!-- filter section -->
       <div
-        class="grid grid-cols-1 gap-y-6 gap-x-4 auto-cols-max sm:grid-cols-6"
+        class="grid grid-cols-1 gap-y-3 gap-x-4 auto-cols-max sm:grid-cols-6"
       >
         <div class="sm:col-span-6">
           <label
@@ -286,13 +286,176 @@
           </button>
           <button
             type="button"
-            class="inline-flex items-center px-6 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="ml-3 inline-flex items-center px-6 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Clear
           </button>
         </div>
       </div>
     </main>
+
+    <!-- tooling table -->
+    <div class="max-w-7xl mx-auto mb-32">
+      <table class="min-w-full divide-y divide-gray-300 rounded-lg">
+        <thead class="bg-gray-100">
+          <tr>
+            <th
+              scope="col"
+              class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+            >
+              Part Number
+            </th>
+            <th
+              scope="col"
+              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+            >
+              Description
+            </th>
+            <th
+              scope="col"
+              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+            >
+              Quantity
+            </th>
+            <th
+              scope="col"
+              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+            >
+              Condition
+            </th>
+
+            <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
+              <span class="sr-only">Edit</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200 bg-white">
+          <tr>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+              <div class="flex items-center">
+                <div>
+                  <div class="font-medium text-gray-900">2312312-123-2</div>
+                </div>
+              </div>
+            </td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <div class="text-gray-900">Lift wrench dals lope</div>
+            </td>
+
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">1</td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <span
+                class="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800"
+                >New</span
+              >
+            </td>
+            <td
+              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+            >
+              <button
+                type="button"
+                class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Request a Quote
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+              <div class="flex items-center">
+                <div>
+                  <div class="font-medium text-gray-900">2312312-123-2</div>
+                </div>
+              </div>
+            </td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <div class="text-gray-900">Lift wrench dals lope</div>
+            </td>
+
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              Unlimited
+            </td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <span
+                class="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800"
+                >New</span
+              >
+            </td>
+            <td
+              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+            >
+              <button
+                type="button"
+                class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Request a Quote
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+              <div class="flex items-center">
+                <div>
+                  <div class="font-medium text-gray-900">2312312-123-2</div>
+                </div>
+              </div>
+            </td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <div class="text-gray-900">Lift wrench dals lope</div>
+            </td>
+
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">3</td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <span
+                class="inline-flex rounded-full bg-yellow-100 px-2 text-xs font-semibold leading-5 text-yellow-800"
+                >Used</span
+              >
+            </td>
+            <td
+              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+            >
+              <button
+                type="button"
+                class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Request a Quote
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+              <div class="flex items-center">
+                <div>
+                  <div class="font-medium text-gray-900">2312312-123-2</div>
+                </div>
+              </div>
+            </td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <div class="text-gray-900">Lift wrench dals lope</div>
+            </td>
+
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">4</td>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <span
+                class="inline-flex rounded-full bg-blue-100 px-2 text-xs font-semibold leading-5 text-blue-800"
+                >Others</span
+              >
+            </td>
+            <td
+              class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
+            >
+              <button
+                type="button"
+                class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Request a Quote
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <!-- footer -->
     <footer class="bg-white" aria-labelledby="footer-heading">
