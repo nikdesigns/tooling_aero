@@ -14,15 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Tooling.aero</title>
   </head>
   <body>
     <!-- header -->
     <nav
-      class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded max-w-7xl mx-auto dark:bg-gray-900"
+      class="bg-white shadow px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
     >
       <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
+        class="container flex flex-wrap justify-between items-center mx-auto head-container max-w-7xl px-4 sm:px-6 lg:px-8"
       >
         <a href="https://flowbite.com/" class="flex items-center">
           <img
@@ -43,10 +44,10 @@
             Get started
           </button>
           <button
-            data-collapse-toggle="navbar-cta"
+            data-collapse-toggle="navbar-sticky"
             type="button"
             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta"
+            aria-controls="navbar-sticky"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
@@ -67,7 +68,7 @@
         </div>
         <div
           class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
+          id="navbar-sticky"
         >
           <ul
             class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
@@ -105,6 +106,137 @@
         </div>
       </div>
     </nav>
+
+    <!-- hero -->
+    <main>
+      <div>
+        <!-- Hero card -->
+        <div class="relative mt-24">
+          <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+              <div class="absolute inset-0">
+                <img
+                  class="h-full w-full object-cover"
+                  src="./images/plane_hanger_3.jpg"
+                  alt="People working on laptops"
+                />
+                <div
+                  class="absolute inset-0 bg-gray-50 mix-blend-multiply"
+                ></div>
+              </div>
+
+              <div
+                class="relative px-4 py-16 sm:px-6 sm:py-12 lg:py-16 lg:px-8"
+              >
+                <div
+                  class="backdrop-blur-sm bg-white/30 backdrop-saturate-200 py-6 w-max mx-auto rounded-lg"
+                >
+                  <h1
+                    class="text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl"
+                  >
+                    <span class="block text-blue-900 drop-shadow-lg"
+                      >Take control of your</span
+                    >
+                    <span class="block text-blue-900 drop-shadow-lg"
+                      >tools support</span
+                    >
+                  </h1>
+                  <p
+                    class="mt-6 max-w-lg mx-auto text-center text-lg text-blue sm:max-w-3xl drop-shadow-lg"
+                  >
+                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+                    occaecat fugiat aliqua.
+                  </p>
+                  <div
+                    class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"
+                  >
+                    <div
+                      class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-indigo-50 sm:px-8"
+                      >
+                        Get started
+                      </a>
+                      <a
+                        href="#"
+                        class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-90 hover:bg-opacity-100 sm:px-8"
+                      >
+                        Live demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo cloud -->
+        <div class="bg-gray-100">
+          <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <p
+              class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide"
+            >
+              Trusted by over 5 very average small businesses
+            </p>
+            <div
+              class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5"
+            >
+              <div
+                class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+              >
+                <img
+                  class="h-12 filter grayscale hover:grayscale-0"
+                  src="https://www.teardowns.aero/images/advertise/air_logo.png"
+                  alt="Tuple"
+                />
+              </div>
+              <div
+                class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+              >
+                <img
+                  class="h-12 filter grayscale hover:grayscale-0"
+                  src="https://www.teardowns.aero/images/advertise/aercap_logo_new.png"
+                  alt="Mirage"
+                />
+              </div>
+              <div
+                class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+              >
+                <img
+                  class="h-12"
+                  src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                  alt="StaticKit"
+                />
+              </div>
+              <div
+                class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1"
+              >
+                <img
+                  class="h-12"
+                  src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                  alt="Transistor"
+                />
+              </div>
+              <div
+                class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1"
+              >
+                <img
+                  class="h-12"
+                  src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                  alt="Workcation"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
 
     <!-- scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
