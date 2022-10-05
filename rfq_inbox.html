@@ -345,181 +345,8 @@
       <!-- Signin Modal end -->
     </div>
 
-    <!-- tooling section -->
-    <main
-      class="max-w-7xl mx-auto sm:px-6 sm:py-6 lg:px-8 mt-28 bg-gray-100 rounded-lg mb-6"
-    >
-      <!-- filter section -->
-      <div
-        class="grid grid-cols-1 gap-y-3 gap-x-4 auto-cols-max sm:grid-cols-6"
-      >
-        <div class="sm:col-span-6">
-          <label
-            for="part-number"
-            class="block text-sm font-medium text-gray-700"
-          >
-            Upload a List of Part
-          </label>
-          <button
-            type="button"
-            class="mt-2 inline-flex items-center px-6 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-          >
-            Upload
-          </button>
-        </div>
-
-        <div class="sm:col-span-6">
-          <hr />
-        </div>
-
-        <div class="sm:col-span-2">
-          <label
-            for="part-number"
-            class="block text-sm font-medium text-gray-700"
-          >
-            Part Number
-          </label>
-          <div class="mt-1">
-            <input
-              type="text"
-              name="part-number"
-              id="part-number"
-              autocomplete="part-number"
-              class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
-        </div>
-
-        <div class="sm:col-span-3">
-          <label
-            for="part-description"
-            class="block text-sm font-medium text-gray-700"
-          >
-            Description
-          </label>
-          <div class="mt-1">
-            <input
-              id="part-description"
-              name="part-description"
-              type="text"
-              autocomplete="part-description"
-              class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
-        </div>
-
-        <div class="sm:col-span-1">
-          <label for="quantity" class="block text-sm font-medium text-gray-700">
-            Quantity
-          </label>
-          <div class="mt-1">
-            <input
-              type="number"
-              name="quantity"
-              id="quantity"
-              class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
-        </div>
-
-        <div class="sm:col-span-2">
-          <div>
-            <label class="text-sm font-medium text-gray-700">Condition</label>
-            <div class="flex mt-2">
-              <div class="flex items-center mr-6">
-                <input
-                  checked
-                  id="condition-new"
-                  type="checkbox"
-                  value=""
-                  class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  for="condition-new"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >New</label
-                >
-              </div>
-              <div class="flex items-center mr-6">
-                <input
-                  checked
-                  id="condition-used"
-                  type="checkbox"
-                  value=""
-                  class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  for="condition-used"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >Serviceable</label
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sm:col-span-2">
-          <div>
-            <label class="block text-sm font-medium text-gray-700">For</label>
-            <fieldset class="mt-2">
-              <legend class="sr-only">For</legend>
-              <div
-                class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10"
-              >
-                <div class="flex items-center">
-                  <input
-                    id="tool-buy"
-                    name="tool-for"
-                    type="radio"
-                    checked
-                    class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
-                  />
-                  <label
-                    for="tool-buy"
-                    class="ml-3 block text-sm font-medium text-gray-700"
-                  >
-                    Buy
-                  </label>
-                </div>
-
-                <div class="flex items-center">
-                  <input
-                    id="tool-lease"
-                    name="tool-for"
-                    type="radio"
-                    class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
-                  />
-                  <label
-                    for="tool-lease"
-                    class="ml-3 block text-sm font-medium text-gray-700"
-                  >
-                    Lease
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-
-        <div class="sm:col-span-2 self-end place-self-end">
-          <button
-            type="button"
-            class="inline-flex items-center px-12 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-          >
-            Send RFQ
-          </button>
-          <button
-            type="button"
-            class="ml-3 inline-flex items-center px-6 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-          >
-            Clear
-          </button>
-        </div>
-      </div>
-    </main>
-
     <!-- tooling table -->
-    <div class="max-w-7xl mx-auto mb-16">
+    <div class="max-w-7xl mx-auto mb-16 mt-28">
       <table class="min-w-full divide-y divide-gray-300 border">
         <thead class="bg-gray-100">
           <tr>
@@ -575,13 +402,7 @@
               scope="col"
               class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
             >
-              Quote by
-            </th>
-            <th
-              scope="col"
-              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
-            >
-              Price
+              Quote
             </th>
 
             <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
@@ -650,15 +471,24 @@
               John Doe
               <span class="block text-gray-600"> Jetwest Airways </span>
             </td>
+
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
-              Patty Ugalde
-            </td>
-            <td
-              class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
-            >
-              4500
+              <span class="relative z-0 inline-flex shadow-sm rounded-md">
+                <button
+                  type="button"
+                  class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  Quote
+                </button>
+                <button
+                  type="button"
+                  class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-red-300 bg-red-50 text-xs font-medium text-red-700 hover:bg-red-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  No Quote
+                </button>
+              </span>
             </td>
             <td
               class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
@@ -676,21 +506,37 @@
                     class="w-5 h-5"
                   >
                     <path
-                      d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                    />
-                    <path
                       fill-rule="evenodd"
-                      d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
+                      d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5zm6.61 10.936a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                       clip-rule="evenodd"
                     />
                     <path
-                      d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"
+                      d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"
                     />
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-gray-600 hover:text-gray-900"
+                  class="text-green-600 hover:text-green-900"
+                  aria-label="View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z"
+                    />
+                    <path
+                      d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-red-600 hover:text-red-900"
                   aria-label="View"
                 >
                   <svg
@@ -701,7 +547,7 @@
                   >
                     <path
                       fill-rule="evenodd"
-                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
+                      d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
                       clip-rule="evenodd"
                     />
                   </svg>
@@ -770,11 +616,7 @@
               John Doe
               <span class="block text-gray-600"> Jetwest Airways </span>
             </td>
-            <td
-              class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
-            >
-              Patty Ugalde
-            </td>
+
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
@@ -890,11 +732,7 @@
               John Doe
               <span class="block text-gray-600"> Jetwest Airways </span>
             </td>
-            <td
-              class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
-            >
-              Patty Ugalde
-            </td>
+
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
@@ -1010,11 +848,7 @@
               John Doe
               <span class="block text-gray-600"> Jetwest Airways </span>
             </td>
-            <td
-              class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
-            >
-              Patty Ugalde
-            </td>
+
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
@@ -1130,11 +964,7 @@
               John Doe
               <span class="block text-gray-600"> Xtra Aerospace Inc. </span>
             </td>
-            <td
-              class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
-            >
-              Patty Ugalde
-            </td>
+
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
@@ -1250,11 +1080,7 @@
               John Doe
               <span class="block text-gray-600"> Jetwest Airways </span>
             </td>
-            <td
-              class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
-            >
-              Patty Ugalde
-            </td>
+
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >

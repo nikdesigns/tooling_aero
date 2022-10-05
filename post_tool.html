@@ -355,7 +355,7 @@
           <div class="md:col-span-1">
             <div class="px-4 sm:px-0">
               <h3 class="text-lg font-medium leading-6 text-gray-900">
-                Post Tools
+                Create RFQ
               </h3>
               <p class="mt-1 text-sm text-gray-600">
                 Dolorem animi eos sit eligendi quas voluptatem.
@@ -366,7 +366,7 @@
                   Upload a list of parts
                 </label>
                 <div
-                  class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"
+                  class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-400 border-dashed rounded-md bg-gray-50"
                 >
                   <div class="space-y-1 text-center">
                     <svg
@@ -386,7 +386,7 @@
                     <div class="flex text-sm text-gray-600">
                       <label
                         for="file-upload"
-                        class="relative cursor-pointer bg-gray-100 rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500"
+                        class="relative cursor-pointer bg-gray-50 rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500"
                       >
                         <span>Upload a file</span>
                         <input
@@ -399,8 +399,16 @@
                       <p class="pl-1">or drag and drop</p>
                     </div>
                     <p class="text-xs text-gray-500">
-                      PNG, JPG, GIF up to 10MB
+                      xlsx, xls, csv up to 10MB
                     </p>
+                    <div class="pt-3">
+                      <button
+                        type="button"
+                        class="inline-flex items-center px-6 py-1.5 border border-transparent text-xs font-medium rounded text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                      >
+                        Upload
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -474,30 +482,18 @@
                               >New</label
                             >
                           </div>
+
                           <div class="flex items-center mr-6">
                             <input
-                              id="condition-used"
+                              id="condition-Serviceable"
                               type="checkbox"
                               value=""
                               class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                             />
                             <label
-                              for="condition-used"
+                              for="condition-Serviceable"
                               class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                              >Used</label
-                            >
-                          </div>
-                          <div class="flex items-center mr-6">
-                            <input
-                              id="condition-others"
-                              type="checkbox"
-                              value=""
-                              class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                            />
-                            <label
-                              for="condition-others"
-                              class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                              >Other</label
+                              >Serviceable</label
                             >
                           </div>
                         </div>
@@ -516,17 +512,17 @@
                           >
                             <div class="flex items-center">
                               <input
-                                id="tool-rent"
+                                id="tool-buy"
                                 name="tool-for"
                                 type="radio"
                                 checked=""
                                 class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
                               />
                               <label
-                                for="tool-rent"
+                                for="tool-buy"
                                 class="ml-3 block text-sm font-medium text-gray-700"
                               >
-                                Rent
+                                Buy
                               </label>
                             </div>
 

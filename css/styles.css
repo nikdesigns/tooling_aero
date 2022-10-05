@@ -5,3 +5,11 @@ body {
 [x-cloak] {
   display: none !important;
 }
+
+.underline-06 {
+  background-image: linear-gradient(90deg, #eff6ff, #7dd3fc);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  position: relative;
+}
