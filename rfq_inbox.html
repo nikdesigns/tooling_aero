@@ -346,6 +346,7 @@
     </div>
 
     <!-- tooling table -->
+
     <div class="max-w-7xl mx-auto mb-16 mt-28">
       <table class="min-w-full divide-y divide-gray-300 border">
         <thead class="bg-gray-100">
@@ -400,7 +401,7 @@
             </th>
             <th
               scope="col"
-              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 text-center"
             >
               Quote
             </th>
@@ -422,16 +423,18 @@
             <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
               <div>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-green-500"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-green-600"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                    clip-rule="evenodd"
-                  />
+                    d="M3 12L9 18L21 6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
                 </svg>
               </div>
             </td>
@@ -478,7 +481,7 @@
               <span class="relative z-0 inline-flex shadow-sm rounded-md">
                 <button
                   type="button"
-                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-gray-300 bg-white text-xs font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-green-300 bg-white text-xs font-medium text-green-700 hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
                   Quote
                 </button>
@@ -496,60 +499,89 @@
               <div class="flex justify-between">
                 <a
                   href="#"
-                  class="text-blue-600 hover:text-blue-900"
+                  class="text-gray-500 hover:text-blue-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-gray-500 hover:text-blue-700"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5zm6.61 10.936a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                      clip-rule="evenodd"
-                    />
+                      d="M6 22H18C19.1046 22 20 21.1046 20 20V9.82843C20 9.29799 19.7893 8.78929 19.4142 8.41421L13.5858 2.58579C13.2107 2.21071 12.702 2 12.1716 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"
-                    />
+                      d="M13 2.5V9H19"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-green-600 hover:text-green-900"
+                  class="text-gray-500 hover:text-green-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z"
-                    />
+                      d="M11 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V13"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z"
-                    />
+                      d="M9.5 11.5L17.5 3.5C18.3284 2.67157 19.6716 2.67157 20.5 3.5C21.3284 4.32843 21.3284 5.67157 20.5 6.5L12.5 14.5L8 16L9.5 11.5Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-red-600 hover:text-red-900"
+                  class="text-gray-500 hover:text-red-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
-                      clip-rule="evenodd"
-                    />
+                      d="M18 16H21C21.5523 16 22 15.5523 22 15V9C22 8.44772 21.5523 8 21 8H3C2.44772 8 2 8.44772 2 9V15C2 15.5523 2.44772 16 3 16H6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 12H18V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V12Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 4C6 3.44772 6.44772 3 7 3H17C17.5523 3 18 3.44772 18 4V8H6V4Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -564,21 +596,33 @@
                 </div>
               </div>
             </td>
-            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-yellow-500"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-yellow-600"
+              >
+                <path
+                  d="M2.20164 18.4695L10.1643 4.00506C10.9021 2.66498 13.0979 2.66498 13.8357 4.00506L21.7984 18.4695C22.4443 19.6428 21.4598 21 19.9627 21H4.0373C2.54022 21 1.55571 19.6428 2.20164 18.4695Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12 9V13"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12 17.0195V17"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </td>
 
             <td
@@ -620,7 +664,20 @@
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
-              4500
+              <span class="relative z-0 inline-flex shadow-sm rounded-md">
+                <button
+                  type="button"
+                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-green-300 bg-white text-xs font-medium text-green-700 hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  Quote
+                </button>
+                <button
+                  type="button"
+                  class="-ml-px relative inline-flex items-center px-3 py-1.5 rounded-r-md border border-red-300 bg-red-50 text-xs font-medium text-red-700 hover:bg-red-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  No Quote
+                </button>
+              </span>
             </td>
             <td
               class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
@@ -628,44 +685,89 @@
               <div class="flex justify-between">
                 <a
                   href="#"
-                  class="text-blue-600 hover:text-blue-900"
+                  class="text-gray-500 hover:text-blue-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-gray-500 hover:text-blue-700"
                   >
                     <path
-                      d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                    />
+                      d="M6 22H18C19.1046 22 20 21.1046 20 20V9.82843C20 9.29799 19.7893 8.78929 19.4142 8.41421L13.5858 2.58579C13.2107 2.21071 12.702 2 12.1716 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      fill-rule="evenodd"
-                      d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
-                      clip-rule="evenodd"
-                    />
-                    <path
-                      d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"
-                    />
+                      d="M13 2.5V9H19"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-gray-600 hover:text-gray-900"
+                  class="text-gray-500 hover:text-green-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
-                      clip-rule="evenodd"
-                    />
+                      d="M11 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V13"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M9.5 11.5L17.5 3.5C18.3284 2.67157 19.6716 2.67157 20.5 3.5C21.3284 4.32843 21.3284 5.67157 20.5 6.5L12.5 14.5L8 16L9.5 11.5Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-red-700"
+                  aria-label="View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M18 16H21C21.5523 16 22 15.5523 22 15V9C22 8.44772 21.5523 8 21 8H3C2.44772 8 2 8.44772 2 9V15C2 15.5523 2.44772 16 3 16H6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 12H18V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V12Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 4C6 3.44772 6.44772 3 7 3H17C17.5523 3 18 3.44772 18 4V8H6V4Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -680,21 +782,21 @@
                 </div>
               </div>
             </td>
-            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-yellow-500"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600"
+              >
+                <path
+                  d="M3 12L9 18L21 6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </td>
 
             <td
@@ -736,7 +838,20 @@
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
-              4500
+              <span class="relative z-0 inline-flex shadow-sm rounded-md">
+                <button
+                  type="button"
+                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-green-300 bg-white text-xs font-medium text-green-700 hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  Quote
+                </button>
+                <button
+                  type="button"
+                  class="-ml-px relative inline-flex items-center px-3 py-1.5 rounded-r-md border border-red-300 bg-red-50 text-xs font-medium text-red-700 hover:bg-red-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  No Quote
+                </button>
+              </span>
             </td>
             <td
               class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
@@ -744,44 +859,89 @@
               <div class="flex justify-between">
                 <a
                   href="#"
-                  class="text-blue-600 hover:text-blue-900"
+                  class="text-gray-500 hover:text-blue-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-gray-500 hover:text-blue-700"
                   >
                     <path
-                      d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                    />
+                      d="M6 22H18C19.1046 22 20 21.1046 20 20V9.82843C20 9.29799 19.7893 8.78929 19.4142 8.41421L13.5858 2.58579C13.2107 2.21071 12.702 2 12.1716 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      fill-rule="evenodd"
-                      d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
-                      clip-rule="evenodd"
-                    />
-                    <path
-                      d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"
-                    />
+                      d="M13 2.5V9H19"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-gray-600 hover:text-gray-900"
+                  class="text-gray-500 hover:text-green-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
-                      clip-rule="evenodd"
-                    />
+                      d="M11 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V13"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M9.5 11.5L17.5 3.5C18.3284 2.67157 19.6716 2.67157 20.5 3.5C21.3284 4.32843 21.3284 5.67157 20.5 6.5L12.5 14.5L8 16L9.5 11.5Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-red-700"
+                  aria-label="View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M18 16H21C21.5523 16 22 15.5523 22 15V9C22 8.44772 21.5523 8 21 8H3C2.44772 8 2 8.44772 2 9V15C2 15.5523 2.44772 16 3 16H6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 12H18V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V12Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 4C6 3.44772 6.44772 3 7 3H17C17.5523 3 18 3.44772 18 4V8H6V4Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -799,16 +959,30 @@
             <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
               <div>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-green-500"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-yellow-600"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                    clip-rule="evenodd"
-                  />
+                    d="M2.20164 18.4695L10.1643 4.00506C10.9021 2.66498 13.0979 2.66498 13.8357 4.00506L21.7984 18.4695C22.4443 19.6428 21.4598 21 19.9627 21H4.0373C2.54022 21 1.55571 19.6428 2.20164 18.4695Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12 9V13"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12 17.0195V17"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
                 </svg>
               </div>
             </td>
@@ -852,7 +1026,20 @@
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
-              4500
+              <span class="relative z-0 inline-flex shadow-sm rounded-md">
+                <button
+                  type="button"
+                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-green-300 bg-white text-xs font-medium text-green-700 hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  Quote
+                </button>
+                <button
+                  type="button"
+                  class="-ml-px relative inline-flex items-center px-3 py-1.5 rounded-r-md border border-red-300 bg-red-50 text-xs font-medium text-red-700 hover:bg-red-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  No Quote
+                </button>
+              </span>
             </td>
             <td
               class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
@@ -860,44 +1047,89 @@
               <div class="flex justify-between">
                 <a
                   href="#"
-                  class="text-blue-600 hover:text-blue-900"
+                  class="text-gray-500 hover:text-blue-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-gray-500 hover:text-blue-700"
                   >
                     <path
-                      d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                    />
+                      d="M6 22H18C19.1046 22 20 21.1046 20 20V9.82843C20 9.29799 19.7893 8.78929 19.4142 8.41421L13.5858 2.58579C13.2107 2.21071 12.702 2 12.1716 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      fill-rule="evenodd"
-                      d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
-                      clip-rule="evenodd"
-                    />
-                    <path
-                      d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"
-                    />
+                      d="M13 2.5V9H19"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-gray-600 hover:text-gray-900"
+                  class="text-gray-500 hover:text-green-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
-                      clip-rule="evenodd"
-                    />
+                      d="M11 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V13"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M9.5 11.5L17.5 3.5C18.3284 2.67157 19.6716 2.67157 20.5 3.5C21.3284 4.32843 21.3284 5.67157 20.5 6.5L12.5 14.5L8 16L9.5 11.5Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-red-700"
+                  aria-label="View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M18 16H21C21.5523 16 22 15.5523 22 15V9C22 8.44772 21.5523 8 21 8H3C2.44772 8 2 8.44772 2 9V15C2 15.5523 2.44772 16 3 16H6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 12H18V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V12Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 4C6 3.44772 6.44772 3 7 3H17C17.5523 3 18 3.44772 18 4V8H6V4Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -915,16 +1147,18 @@
             <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
               <div>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-green-500"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-green-600"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                    clip-rule="evenodd"
-                  />
+                    d="M3 12L9 18L21 6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
                 </svg>
               </div>
             </td>
@@ -968,7 +1202,20 @@
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
-              4500
+              <span class="relative z-0 inline-flex shadow-sm rounded-md">
+                <button
+                  type="button"
+                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-green-300 bg-white text-xs font-medium text-green-700 hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  Quote
+                </button>
+                <button
+                  type="button"
+                  class="-ml-px relative inline-flex items-center px-3 py-1.5 rounded-r-md border border-red-300 bg-red-50 text-xs font-medium text-red-700 hover:bg-red-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  No Quote
+                </button>
+              </span>
             </td>
             <td
               class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
@@ -976,44 +1223,89 @@
               <div class="flex justify-between">
                 <a
                   href="#"
-                  class="text-blue-600 hover:text-blue-900"
+                  class="text-gray-500 hover:text-blue-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-gray-500 hover:text-blue-700"
                   >
                     <path
-                      d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                    />
+                      d="M6 22H18C19.1046 22 20 21.1046 20 20V9.82843C20 9.29799 19.7893 8.78929 19.4142 8.41421L13.5858 2.58579C13.2107 2.21071 12.702 2 12.1716 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      fill-rule="evenodd"
-                      d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
-                      clip-rule="evenodd"
-                    />
-                    <path
-                      d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"
-                    />
+                      d="M13 2.5V9H19"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-gray-600 hover:text-gray-900"
+                  class="text-gray-500 hover:text-green-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
-                      clip-rule="evenodd"
-                    />
+                      d="M11 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V13"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M9.5 11.5L17.5 3.5C18.3284 2.67157 19.6716 2.67157 20.5 3.5C21.3284 4.32843 21.3284 5.67157 20.5 6.5L12.5 14.5L8 16L9.5 11.5Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-red-700"
+                  aria-label="View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M18 16H21C21.5523 16 22 15.5523 22 15V9C22 8.44772 21.5523 8 21 8H3C2.44772 8 2 8.44772 2 9V15C2 15.5523 2.44772 16 3 16H6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 12H18V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V12Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 4C6 3.44772 6.44772 3 7 3H17C17.5523 3 18 3.44772 18 4V8H6V4Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -1028,21 +1320,33 @@
                 </div>
               </div>
             </td>
-            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6 text-yellow-500"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
+            <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-yellow-600"
+              >
+                <path
+                  d="M2.20164 18.4695L10.1643 4.00506C10.9021 2.66498 13.0979 2.66498 13.8357 4.00506L21.7984 18.4695C22.4443 19.6428 21.4598 21 19.9627 21H4.0373C2.54022 21 1.55571 19.6428 2.20164 18.4695Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12 9V13"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12 17.0195V17"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
             </td>
 
             <td
@@ -1084,7 +1388,20 @@
             <td
               class="whitespace-normal px-3 py-4 text-sm text-gray-800 font-medium"
             >
-              4500
+              <span class="relative z-0 inline-flex shadow-sm rounded-md">
+                <button
+                  type="button"
+                  class="relative inline-flex items-center px-3 py-1.5 rounded-l-md border border-green-300 bg-white text-xs font-medium text-green-700 hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  Quote
+                </button>
+                <button
+                  type="button"
+                  class="-ml-px relative inline-flex items-center px-3 py-1.5 rounded-r-md border border-red-300 bg-red-50 text-xs font-medium text-red-700 hover:bg-red-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  No Quote
+                </button>
+              </span>
             </td>
             <td
               class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
@@ -1092,44 +1409,89 @@
               <div class="flex justify-between">
                 <a
                   href="#"
-                  class="text-blue-600 hover:text-blue-900"
+                  class="text-gray-500 hover:text-blue-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-gray-500 hover:text-blue-700"
                   >
                     <path
-                      d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                    />
+                      d="M6 22H18C19.1046 22 20 21.1046 20 20V9.82843C20 9.29799 19.7893 8.78929 19.4142 8.41421L13.5858 2.58579C13.2107 2.21071 12.702 2 12.1716 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                     <path
-                      fill-rule="evenodd"
-                      d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
-                      clip-rule="evenodd"
-                    />
-                    <path
-                      d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"
-                    />
+                      d="M13 2.5V9H19"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
                 <a
                   href="#"
-                  class="text-gray-600 hover:text-gray-900"
+                  class="text-gray-500 hover:text-green-700"
                   aria-label="View"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-5 h-5"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
-                      clip-rule="evenodd"
-                    />
+                      d="M11 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V13"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M9.5 11.5L17.5 3.5C18.3284 2.67157 19.6716 2.67157 20.5 3.5C21.3284 4.32843 21.3284 5.67157 20.5 6.5L12.5 14.5L8 16L9.5 11.5Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 hover:text-red-700"
+                  aria-label="View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M18 16H21C21.5523 16 22 15.5523 22 15V9C22 8.44772 21.5523 8 21 8H3C2.44772 8 2 8.44772 2 9V15C2 15.5523 2.44772 16 3 16H6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 12H18V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V12Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 4C6 3.44772 6.44772 3 7 3H17C17.5523 3 18 3.44772 18 4V8H6V4Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -1138,6 +1500,7 @@
         </tbody>
       </table>
       <!-- pagination -->
+
       <div
         class="bg-white px-6 py-3 flex items-center justify-between sm:px-6 mt-6"
       >
